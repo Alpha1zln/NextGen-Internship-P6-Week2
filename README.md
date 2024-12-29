@@ -21,6 +21,32 @@ website is running .
 mongodb is connected too.
 few err encountered, working on them.
 
+
+4-
+Use .gitignore:
+To Avoid Adding Other Files or Folders
+
+Create a .gitignore file in your repository root to ignore unwanted files or folders.
+
+Example:
+gitignore
+Copy code
+other_folder/
+*.log
+
+Stage Changes Carefully:
+
+Use git add with the specific path to prevent staging unintended files:
+bash
+Copy code
+git add fullstack_proj/
+Check Before Committing:
+
+Always run git status to review what you are committing.
+    
+    
+
+
     To combine your frontend and backend into a single project while keeping them organized, follow these steps:
     
     1. Create a New Project Folder
@@ -113,6 +139,93 @@ few err encountered, working on them.
       res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
     });
 
+
+    **********************************************************************
+    
+    To add all files in the folder fullstack_proj to your Git staging area, follow these steps:
+    
+    Command to Add All Files in fullstack_proj
+    bash
+    Copy code
+    git add fullstack_proj/
+    This will add all files and subdirectories within the fullstack_proj folder to the staging area.
+
+     **********************************************************************
+
+        To change dir in git bash - 
+        Command
+        Use double quotes (") around the path:
+        bash
+        Copy code
+        cd "C:\Users\EKLVY\Desktop\edunet internship\dec web dev internsp EY\mix week1_2"
+        
+        Alternatively, escape each space with a backslash (\):
+        bash
+        Copy code
+        cd C:\Users\EKLVY\Desktop\edunet\ internship\fullstackProject
+
+      **********************************************************************
+        How to fork repo , make changes in git bash and then push to github repo back - 
+
+                1- FORK REPO :: 
+                    STEPS : 
+                    A- FORK REPO INTO YOUR GITHUB FROM MAIN. B- Copy the http link for cloning data to PC.
+                    
+                    Detail here - 
+                    https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?tool=webui
+                    
+                
+                    B- MAKE ITS CLONE INTO PC.
+                    Open Git Bash.
+                    Change the current working directory [cwd] to the location where you want the cloned directory.
+                    Type git clone, and then paste the URL you copied earlier.
+                    CODE FOR CLONE -
+                    git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+
+
+
+                    *** 
+                    It is good approach, to create BRANCH of your main, so that both are saved separately and later changes can be matched or if branch code fails, at least main code is     
+                    remain unaltered.
+    
+                    Cmd for creating branch in git bash ->
+                        git checkout -b branch-name
+
+
+
+            2- MAKE CHANGES IN VSCODE - 
+            Adding files and updating the code to add more features and functionality and styling. A- Go to the cwd and open vscode.
+                How to work with React project :
+                    - npm start [as basic setup is already there, else different steps for react project]
+                    - if any files is not matching, install it.
+                    - here scripts file has to be installed [in this project]  
+                    B- Once all changes are made. Follow below steps to push code from local pc to github.
+
+                    
+
+            3- Make changes in git bash - 
+            
+             STEPS TO BE FOLLOWED IN GIT BASH SO THAT LOCAL CODE IS TRANSFERED TO GITHUB
+             Summary of Commands
+              bash
+              Copy code
+              # Create and switch to a new branch
+              git checkout -b branch-name
+              
+              # Stage changes
+              git add .
+              
+              # Commit changes
+              git commit -m "Your commit message"
+              
+              # Push changes to the remote repository
+              git push origin branch-name
+              
+              # Pull changes from the remote branch
+              git pull origin branch-name
+              Let me know if you need further clarification!
+
+       **********************************************************************
     
     *****************
     // some modification reqd here -  
