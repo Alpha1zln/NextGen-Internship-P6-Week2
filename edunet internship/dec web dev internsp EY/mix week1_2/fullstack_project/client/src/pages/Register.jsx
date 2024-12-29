@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import registerImg from '../assets/images/register.png'
 import userIcon from '../assets/images/user.png'
 
-  
+    
 const Register = () => {
 
   const [credentials,setCredentials]= useState({
